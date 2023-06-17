@@ -235,7 +235,7 @@ preset_keyboards:
       - {click: l, long_click: '"', swipe_down: '"', key_back_color: bh2, key_text_color: th2}
       - {width: 5, key_back_color: bh2, key_text_color: th2}
 
-      - {click: Shift_L, composing: Tab, width: 15, hilited_key_back_color: benter, key_back_color: bbs, key_text_color: tbs}
+      - {click: Shift_L, width: 15, hilited_key_back_color: benter, key_back_color: bbs, key_text_color: tbs}
       - {click: z, long_click: '`', swipe_down: '`', key_back_color: bh3, key_text_color: th3}
       - {click: x, long_click: cut, swipe_down: cut, key_back_color: bh3, key_text_color: th3}
       - {click: c, long_click: copy, swipe_down: copy, key_back_color: bh3, key_text_color: th3}
