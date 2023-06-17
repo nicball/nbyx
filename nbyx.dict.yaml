@@ -1,0 +1,13 @@
+# Rime dict
+
+name: nbyx
+version: '0.1.0'
+sort: by_weight
+use_preset_vocabulary: false
+import_tables:
+  - nbyx.hotsym
+  - nbyx.math
+  - nbyx.openfly
+  - nbyx.flypy_full
+
+...

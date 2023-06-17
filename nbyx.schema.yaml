@@ -1,0 +1,68 @@
+schema:
+  schema_id: nbyx
+  name: 肉球音形
+  version: '0.1.0'
+  author:
+    - nicball <znhihgiasy@gmail.com>
+  description: 只是另一个双拼+辅助码输入方案
+
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: [ 中文, 西文 ]
+  - name: full_shape
+    states: [ 半角, 全角 ]
+  - name: simplification
+    reset: 1
+    states: [ 漢字, 汉字 ]
+  - name: ascii_punct
+    states: [ 。，, ．， ]
+
+engine:
+
+  processors:
+    - ascii_composer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - express_editor
+
+  segmentors:
+    - ascii_segmentor
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+
+  translators:
+    - punct_translator
+    - table_translator
+
+  filters:
+    - simplifier
+    - uniquifier
+
+speller:
+  initials: '\\;abcdefghijklmnopqrstuvwxyz'
+  alphabet: "\\\"!#%&'()*+,-./;:<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[]^_`abcdefghijklmnopqrstuvwxyz{|}~"
+  auto_select: true
+
+key_binder:
+  bindings:
+    - when: paging
+      accept: bracketleft
+      send: Page_Up
+    - when: has_menu
+      accept: bracketright
+      send: Page_Down
+    - when: has_menu
+      accept: semicolon
+      send: 2
+
+translator:
+  dictionary: nbyx
+  enable_encoder: false
+  enable_sentence: false
+
+punctuator:
+  import_preset: default

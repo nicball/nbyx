@@ -1,0 +1,33 @@
+# Rime dict
+
+name: nbyx.hotsym
+version: '0.1.0'
+sort: original
+use_preset_vocabulary: false
+
+...
+
+：“	;q
+？	;w
+（	;e
+）	;r
+@	;t
+《	;y
+_	;u
+——	;p
+！	;a
+……	;s
+、	;d
+(	;f
+》	;g
++	;h
+-	;j
+*	;k
+/	;l
+“	;z
+”	;x
+)	;c
+[	;v
+]	;b
+<	;n
+>	;m
