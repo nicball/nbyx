@@ -63,6 +63,7 @@ translator:
   dictionary: nbyx
   enable_encoder: false
   enable_sentence: false
+  enable_user_dict: false
 
 punctuator:
   import_preset: default
