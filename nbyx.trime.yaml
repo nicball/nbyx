@@ -247,7 +247,7 @@ preset_keyboards:
 
       - {width: 5}
       - {click: ',', width: 15, label: ',', long_click: '.', swipe_down: '.', swipe_up: '.', key_back_color: bh4, key_text_color: th4}
-      - {click: space, width: 40, long_click: Mode_switch, swipe_left: "Left", swipe_right: "Right", swipe_up: Schema_switchcn, key_back_color: bkg, key_text_color: tkg}
+      - {click: space, width: 40, long_click: Mode_switch, swipe_left: "Left", swipe_right: "Right", key_back_color: bkg, key_text_color: tkg}
       - {click: ';', width: 15, swipe_down: ':', swipe_up: ':', key_back_color: bgn, key_text_color: tgn}
       - {click: Return, width: 20, key_back_color: benter, key_text_color: tenter}
       - {width: 5}
