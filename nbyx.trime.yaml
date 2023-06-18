@@ -239,14 +239,14 @@ preset_keyboards:
       - {click: z, long_click: '`', swipe_down: '`', key_back_color: bh3, key_text_color: th3}
       - {click: x, long_click: cut, swipe_down: cut, key_back_color: bh3, key_text_color: th3}
       - {click: c, long_click: copy, swipe_down: copy, key_back_color: bh3, key_text_color: th3}
-      - {click: v, long_click: paste_clip, swipe_down: paste, key_back_color: bh3, key_text_color: th3}
+      - {click: v, long_click: paste, swipe_down: paste, key_back_color: bh3, key_text_color: th3}
       - {click: b, key_back_color: bh3, key_text_color: th3}
       - {click: n, long_click: '|', swipe_down: '|', key_back_color: bh3, key_text_color: th3}
       - {click: m, long_click: '\', swipe_down: '\', key_back_color: bh3, key_text_color: th3}
-      - {click: BackSpace, swipe_down: '{Control+a}{BackSpace}', width: 15, key_back_color: bbs, key_text_color: tbs}
+      - {click: BackSpace, swipe_down: '{Control+a}{BackSpace}', swipe_up: '{Control+a}{BackSpace}' width: 15, key_back_color: bbs, key_text_color: tbs}
 
       - {width: 5}
-      - {click: ',', width: 15, label: ',', long_click: '.', key_back_color: bh4, key_text_color: th4}
+      - {click: ',', width: 15, label: ',', long_click: '.', swipe_down: '.', swipe_up: '.', key_back_color: bh4, key_text_color: th4}
       - {click: space, width: 40, long_click: Mode_switch, swipe_left: "Left", swipe_right: "Right", swipe_up: Schema_switchcn, key_back_color: bkg, key_text_color: tkg}
       - {click: ';', width: 15, swipe_down: ':', swipe_up: ':', key_back_color: bgn, key_text_color: tgn}
       - {click: Return, width: 20, key_back_color: benter, key_text_color: tenter}
@@ -275,7 +275,7 @@ preset_keyboards:
       - {click: '*', long_click: '±', key_back_color: bgn, key_text_color: tgn}
       - {click: 7, long_click: select_all}
       - {click: 8, long_click: copy}
-      - {click: 9, long_click: paste_clip, swipe_down: paste}
+      - {click: 9, long_click: paste, swipe_down: paste}
       - {click: BackSpace, key_back_color: bbs, key_text_color: tbs}
 
       - {click: '/', long_click: '\', key_back_color: bgn, key_text_color: tgn}
@@ -293,7 +293,3 @@ preset_keys:
   cut: {label: 剪切, functional: false, send: Control+x}
   copy: {label: 复制, functional: false, send: Control+c}
   paste: {label: 粘贴, functional: false, send: Control+v}
-  paste_clip: {label: 粘贴, send: function, command: clipboard}
-  delimiter: {label: 分词, text: ''''}
-  IME_switch: {label: 🌐, send: LANGUAGE_SWITCH} #彈出對話框選擇輸入法
-  Mode_switch: {toggle: ascii_mode, functional: false, send: Mode_switch, states: [ 中文, 西文 ]}
