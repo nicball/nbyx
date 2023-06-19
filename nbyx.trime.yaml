@@ -231,7 +231,7 @@ preset_keyboards:
 
       - {click: kbd_number, width: 15, key_back_color: bgn, key_text_color: tgn}
       - {click: ',',        width: 15, long_click: '.', swipe_down: '.', swipe_up: '.', key_back_color: bh4, key_text_color: th4}
-      - {click: space,      width: 40, long_click: Mode_switch, swipe_left: Left, swipe_right: Right, swipe_up: Up, swipe_down: Down, key_back_color: bkg, key_text_color: tkg}
+      - {click: space,      width: 40, long_click: mode_switch, swipe_left: Left, swipe_right: Right, swipe_up: Up, swipe_down: Down, key_back_color: bkg, key_text_color: tkg}
       - {click: ';',        width: 15, long_click: ':', swipe_down: ':', swipe_up: ':', key_back_color: bh4, key_text_color: th4}
       - {click: Return,     width: 15, key_back_color: benter, key_text_color: tenter}
 
@@ -278,3 +278,4 @@ preset_keys:
   paste: {label: 粘贴, functional: false, send: Control+v}
   kbd_number: {label: 数字, send: Eisu_toggle, select: number}
   kbd_default: {label: 字母, send: Eisu_toggle, select: default}
+  mode_switch: {label: 中文, ascii: 西文, send: Mode_switch}
