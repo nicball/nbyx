@@ -278,4 +278,4 @@ preset_keys:
   paste: {label: 粘贴, functional: false, send: Control+v}
   kbd_number: {label: 数字, send: Eisu_toggle, select: number}
   kbd_default: {label: 字母, send: Eisu_toggle, select: default}
-  mode_switch: {label: 中文, ascii: 西文, send: Mode_switch}
+  mode_switch: {send: Mode_switch, toggle: ascii_mode, states: [ 中文, 西文 ]}
