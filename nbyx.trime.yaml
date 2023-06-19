@@ -4,22 +4,6 @@
 config_version: '0.1.0'
 name: nbyx            #方案名称
 author: nicball       #作者信息
-
-#键盘高度
-height:
-  1: &jpgd1 30 #表情键盘
-  2: &jpgd2 24 #颜文字键盘1
-  3: &jpgd3 24 #颜文字键盘2
-  4: &jpgd4 48 #主键盘
-  5: &jpgd5 39.5 #符号键盘
-  6: &hgap 4 #键盘横缝大小
-  7: &sgap 8 #键盘竖缝大小
-
-#键盘高度
-round_corner:
-  1: &round1 12 #按键圆角半径
-  2: &round2 0 #候选窗口圆角
-  3: &round3 12 #回车键圆角
   
 #界面风格、功能开关
 style:
@@ -39,7 +23,7 @@ style:
   comment_text_size: 12 #编码提示字号
   hanb_font: hanb.ttf #扩充字体
   horizontal: true #水平模式
-  horizontal_gap: *hgap #键水平间距
+  horizontal_gap: 4 #键水平间距
   layout:
     position: fixed #候选窗口位置：left|right|left_up|right_up|fixed|bottom_left|bottom_right|top_left|top_right(left、right需要Android5.0以上)
     min_length: 4 #候选窗口最小词长
@@ -58,7 +42,7 @@ style:
     line_spacing_multiplier: 1.2 #候选词的行间距(倍数)
     real_margin: 3 #屏幕左右边缘和悬浮窗之间的距离 TODO: 在 4.0 时给 real_margin 与 spacing 换一个更适合的名字
     spacing: 1 #屏幕上下边缘或预编辑上下边缘和悬浮窗之间的距离
-    round_corner: *round2 #候选窗口圆角
+    round_corner: 0 #候选窗口圆角
     alpha: 0xff #透明度(0-255)
     elevation: 0 #阴影(>=Android5.0)
     background: background.png #颜色或者backgrounds目录下的图片文档名
@@ -69,7 +53,7 @@ style:
     - {start: "", composition: "%s", end: "", letter_spacing: 0.12} #letter_spacing需要Android5.0
     - {start: "\n", label: "%s.", candidate: "%s", comment: "%s", end: "", sep: "☁️️"}
   key_font: symbol.ttf #键盘字体
-  key_height: *jpgd4 #键高
+  key_height: 40 #键高
   key_long_text_size: 16 #长标签字号
   key_text_size: 24 #键字号
   key_width: 10.0 #键宽，占屏幕宽的百分比
@@ -87,7 +71,7 @@ style:
   preview_text_size: 40 #按键提示字号
   proximity_correction: true #按键纠错
   reset_ascii_mode: false #显示键盘时重置为中文状态
-  round_corner: *round1 #按键圆角半径
+  round_corner: 12 #按键圆角半径
   shadow_radius: 0.0 #按键阴影半径
   speech_opencc_config: none #语音输入简繁转换
   symbol_font: symbol.ttf #符号字体
@@ -96,7 +80,7 @@ style:
   #text_height: 32 #编码区高度
   text_size: 14 #编码区字号
   vertical_correction: -5
-  vertical_gap: *sgap #键盘行距
+  vertical_gap: 4 #键盘行距
   enter_label_mode: 0  #是否使用App提供的ActionLabel内容作为Enter键的文本（由于多数App没有适配ActionLable，实际影响不大）。0不使用，1只使用actionlabel，2优先使用，3当其他方式没有获得label时才读取actionlabel
   enter_labels:  # 定义Enter键的文本
     go: 前往
