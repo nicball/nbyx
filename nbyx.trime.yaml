@@ -230,9 +230,9 @@ preset_keyboards:
       - {click: BackSpace, swipe_down: '{Control+a}{BackSpace}', swipe_up: '{Control+a}{BackSpace}', width: 15, key_back_color: bbs, key_text_color: tbs}
 
       - {click: kbd_number, width: 15, key_back_color: bgn, key_text_color: tgn}
-      - {click: ',',        width: 15, long_click: '.', swipe_down: '.', swipe_up: '.', key_back_color: bh4, key_text_color: th4}
-      - {click: space,      width: 40, long_click: mode_switch, swipe_left: Left, swipe_right: Right, swipe_up: Up, swipe_down: Down, key_back_color: bkg, key_text_color: tkg}
       - {click: ';',        width: 15, long_click: ':', swipe_down: ':', swipe_up: ':', key_back_color: bh4, key_text_color: th4}
+      - {click: space,      width: 40, long_click: mode_switch, swipe_left: Left, swipe_right: Right, swipe_up: Up, swipe_down: Down, key_back_color: bkg, key_text_color: tkg}
+      - {click: ',',        width: 15, long_click: '.', swipe_down: '.', swipe_up: '.', key_back_color: bh4, key_text_color: th4}
       - {click: Return,     width: 15, key_back_color: benter, key_text_color: tenter}
 
   number:
