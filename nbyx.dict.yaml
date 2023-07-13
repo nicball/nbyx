@@ -8,6 +8,5 @@ import_tables:
   - nbyx.hotsym
   - nbyx.math
   - nbyx.openfly
-  - nbyx.flypy_full
 
 ...
