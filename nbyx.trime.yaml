@@ -271,7 +271,7 @@ preset_keys:
   Shift_L: {label: 上档, preview: '⇪', functional: false, send: Shift_L}
   Return: {label: 回车, preview: '↩', functional: false, send: Return }
   BackSpace: {label: 退格, preview: '⇦', repeatable: true, functional: false, send: BackSpace}
-  space: {repeatable: false, preview: ' ', functional: false, label: '_______', send: space}
+  space: {repeatable: false, preview: ' ', functional: false, label: '_________', send: space}
   select_all: {label: 全选, functional: false, send: Control+a}
   cut: {label: 剪切, functional: false, send: Control+x}
   copy: {label: 复制, functional: false, send: Control+c}
